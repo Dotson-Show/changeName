@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Change Name</title>
+	<meta charset="utf-8">
+	<style>
+		p {
+		  font-family: 'helvetica neue', helvetica, sans-serif;
+		  letter-spacing: 1px;
+		  text-transform: uppercase;
+		  text-align: center;
+		  border: 2px solid gray;
+		  background: rgba(244,244,200,0.3);
+		  color: blue;
+		  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+		  border-radius: 5px;
+		  padding: 3px 10px;
+		  display: inline-block;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<p>Welcome John.. if this is not you please click</p>
+	
+	
+	<script>
+		const param = document.querySelector('p');
+		param.addEventListener('click', updateName);
+		
+		function updateName(){
+			let name = prompt('Please enter your name');
+			param.textContent = 'Wecome ' + name +', How may i help you?';
+		}
+	</script>
+</body>
+</html>
